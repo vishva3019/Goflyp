@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Goflyp",
+    "slug": "goflyp",
+    "scheme": "goflyp",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#080B14",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.goflyp.app",
+      "infoPlist": {
+        "CFBundleDisplayName": "Goflyp",
+        "NSLocationWhenInUseUsageDescription": "Goflyp requires location access to calculate accurate campus road routes, detect nearby motorcycle pick-up gates, and coordinate student journeys.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "Goflyp uses your location during active journeys to provide live route telemetry and campus security dispatch.",
+        "UIBackgroundModes": [
+          "location"
+        ]
+      }
+    },
+    "android": {
+      "package": "com.goflyp.app",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#080B14"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "title": "Goflyp — Alliance University Student Bike Sharing"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-location",
+      "expo-dev-client",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "enableSceneSupport": true
+          }
+        }
+      ]
+    ]
+  }
+}
